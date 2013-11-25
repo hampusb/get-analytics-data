@@ -1,6 +1,7 @@
 #!/bin/sh
 
-// USAGE checkanalytics.sh <file> where file is textfile with one url per line
+# USAGE checkanalytics.sh <file> where file is textfile with one url per line
+
 IFS=$'\r\n' XYZ=($(cat $1))
 
 for var in "${XYZ[@]}"
